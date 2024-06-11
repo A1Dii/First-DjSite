@@ -9,7 +9,6 @@ pyvenv.cfg
 *.pot
 *.mo
 *.swp
-.idea/
 env/
 ENV/
 *.sqlite3
