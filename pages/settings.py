@@ -46,7 +46,7 @@ ROOT_URLCONF = 'First-DjSite.pages.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "pages", "apps", "Site", "Templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -100,7 +100,10 @@ USE_TZ = True
 
 
 
-STATIC_URL = 'static/'
+STATIC_URL = 'pic/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "pages", "apps", "Site", "Templates", "pic"),
+]
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

@@ -1,7 +1,9 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("Привет, мир!")
+    return render(request, "index.html")
 
 def test(request):
     return HttpResponse('ТЕСТОВАЯ СТРАНИЦА')
+
