@@ -41,7 +41,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DjangoSite.urls'
+ROOT_URLCONF = 'First-DjSite.pages.urls'
 
 TEMPLATES = [
     {
@@ -59,7 +59,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DjangoSite.wsgi.application'
+WSGI_APPLICATION = 'First-DjSite.pages.wsgi.application'
 
 
 
