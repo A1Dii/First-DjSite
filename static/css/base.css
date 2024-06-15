@@ -1,0 +1,14 @@
+#base{
+    display: flex;
+  height: 100%;
+}
+
+#block1{
+    flex-grow: 1;
+}
+#block2{
+    flex-grow: 2;
+}
+#block3{
+    flex-grow: 3;
+}

@@ -2,7 +2,7 @@ import os
 import sys
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'First-DjSite.pages.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'First-DjSite.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

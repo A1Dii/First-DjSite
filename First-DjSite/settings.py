@@ -7,20 +7,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_ROOT = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 
-
-
-CONFIG_PATH = "C:/Users/Ken Kaneki/PycharmProjects/django/conf.ini"
+CONFIG_PATH = BASE_DIR / 'conf.ini'
 CONFIG = configparser.RawConfigParser()
 CONFIG.read(CONFIG_PATH)
 SECRET_KEY = CONFIG["Django"]["key"]
 
-
-
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -29,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'First-DjSite.apps.site'
 ]
 
 MIDDLEWARE = [
@@ -41,12 +36,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'First-DjSite.pages.urls'
+ROOT_URLCONF = 'First-DjSite.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "pages", "apps", "Site", "Templates")],
+        'DIRS': [os.path.join(BASE_DIR, "First-DjSite", "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -59,9 +54,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'First-DjSite.pages.wsgi.application'
-
-
+WSGI_APPLICATION = 'First-DjSite.wsgi.application'
 
 DATABASES = {
     'default': {
@@ -69,8 +62,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -87,8 +78,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -97,13 +86,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-
-
-
-STATIC_URL = 'pic/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "pages", "apps", "Site", "Templates", "pic"),
-]
-
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
