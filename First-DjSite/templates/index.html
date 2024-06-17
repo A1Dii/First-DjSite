@@ -1,66 +1,41 @@
-<!DOCTYPE html>
-<html lang="ru">
+<DOCKTYPE html>
+    <html lang="ru">
     <head>
-        {% load static %}
+        <title>Faceit LVL</title>
         <meta charset="UTF-8">
-        <meta title="Глава 1!">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-        <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
-
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-4">Sidebar</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-          Dashboard
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-          Orders
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-          Products
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-          Customers
-        </a>
-      </li>
-    </ul>
-    <hr>
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-        <strong>mdo</strong>
-      </a>
-      <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
+ <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index" class="nav-link active" aria-current="page">Статья "Faceit LVL"</a></li>
+        <li class="nav-item"><a href="Faceit" class="nav-link">Статья "Faceit"</a></li>
+        <li class="nav-item"><a href="blast" class="nav-link">Статья "BLAST"</a></li>
+        <li class="nav-item"><a href="hltv" class="nav-link">Статья "HLTV"</a></li>
       </ul>
-    </div>
+    </header>
+  </div>
+    <div class="cen">
+        <h1>Приветствую на первой тестовой странице, посвященной различным
+            рангам на игровой площадке FACEIT!</h1>
+       <div id="topi">На картинке ниже мы можем наблюдать
+           среднестатистическую аватарку гуля в Steam</div>
+        <img src="{% static 'pic/satoru.jpg' %}" title="Satoru Gojo" width="300">
 
+        <h2>Начнём же краткий экскурс.</h2>
+
+        <h2>Первый lvl Faceit.</h2>
+        <img src="{% static 'pic/1lvl.jpg' %}" title="Первый lvl Faceit" width="170">
+        <div> Это самый первый уровень игрока на Faceit,
+            что олицетворяет его довольно слабую игру.</div>
+
+        <h2 id="lvl">Десятый lvl Faceit.</h2>
+        <img src="{% static 'pic/10lvl.jpg' %}" title="Первый lvl Faceit" width="200">
+        <div> На данной картинке мы видим уже практически самого опытного игрока,
+            который имеет десятый уровень Faceit, что олицетворяет хороший уровень игры.</div>
+        </div>
     </body>
-</html>
+    </html>
+</DOCKTYPE>

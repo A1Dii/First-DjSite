@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_ROOT = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 
-CONFIG_PATH = BASE_DIR / 'conf.ini'
+CONFIG_PATH = 'C:/Users/Ken Kaneki/PycharmProjects/django/conf.ini'
 CONFIG = configparser.RawConfigParser()
 CONFIG.read(CONFIG_PATH)
 SECRET_KEY = CONFIG["Django"]["key"]
