@@ -5,15 +5,6 @@ def index(request):
     return render(request, "index.html")
     event.preventDefault()
 
-def Faceit(request):
-    return render(request, "Faceit.html")
-    event.preventDefault()
-
-def blast(request):
-    return render(request, "blast.html")
-    event.preventDefault()
-
-def hltv(request):
-    return render(request, "hltv.html")
-    event.preventDefault()
+def get_article(request, article_name):
+    return render(request, f'{article_name}.html')
 
