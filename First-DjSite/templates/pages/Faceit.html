@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %} <title>Faceit</title> {% endblock %}
+
+
+{% block content %}
+    <div>   FACEIT — киберспортивная платформа, основанная в Лондоне в 2012 году.
+        Компания учреждала лиги для таких игр, как:
+        <ul>
+            <li>Counter-Strike: Global Offensive</li> <li>League of Legends</li> <li>Rocket League</li>
+        <li>Tom Clancy’s Rainbow Six Siege</li> <li>Dota 2</li> <li>Team Fortress 2</li>
+        </ul>
+    </div>
+    <img src="{% static 'pic/face.png' %}" align="middle">
+{% endblock %}

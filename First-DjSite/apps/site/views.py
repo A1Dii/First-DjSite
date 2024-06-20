@@ -3,8 +3,17 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, "index.html")
-    event.preventDefault()
 
-def get_article(request, article_name):
-    return render(request, f'{article_name}.html')
+
+def blast(request):
+    return render(request, "pages/blast.html")
+
+def faceit(request):
+    return render(request, "pages/faceit.html")
+
+def hltv(request):
+    return render(request, "pages/hltv.html")
+
+
+
 
