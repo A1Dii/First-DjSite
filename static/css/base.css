@@ -12,3 +12,17 @@
 .cen{
     text-align: center;
 }
+
+.btns{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+}
+.btn{
+    padding: 10px 20px;
+    color: blue;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+

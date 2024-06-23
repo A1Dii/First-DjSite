@@ -1,8 +1,7 @@
 {% extends 'index.html' %}
 {% load static %}
-
 {% block title %} <title>Faceit</title> {% endblock %}
-
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
 
 {% block content %}
     <div>   FACEIT — киберспортивная платформа, основанная в Лондоне в 2012 году.
@@ -12,5 +11,11 @@
         <li>Tom Clancy’s Rainbow Six Siege</li> <li>Dota 2</li> <li>Team Fortress 2</li>
         </ul>
     </div>
+    <div class="btns">
+        <button type="button" class="btn" onclick="knopka()">FACEIT ALERT</button>
+    </div>
+
     <img src="{% static 'pic/face.png' %}" align="middle">
+
+    <script src="{% static 'js/button alert.js' %}"></script>
 {% endblock %}
